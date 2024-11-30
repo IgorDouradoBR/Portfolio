@@ -1,13 +1,13 @@
 {
-  "homepage": "https://IgorDouradoBR.github.io/Portfolio",
+  "homepage": "https://igordouradobr.github.io/portfolio",
   "name": "shaquille",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist",
+    "build": "vite build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
