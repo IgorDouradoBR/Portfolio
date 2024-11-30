@@ -11,7 +11,7 @@ const Hero = () => {
         <img
           src={bwmap}
           alt="world map"
-          className="w-full h-full sm:block hidden object-cover"
+          className="w-full h-full sm:block hidden object-cover opacity-100"
         />
       </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
@@ -22,8 +22,10 @@ const Hero = () => {
         />
       </div>
       <section
-        className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
-        sm:bg-hero bg-hero-mobile overflow-hidden">
+  style={{
+    background: "linear-gradient(137deg, rgba(255, 255, 255, 0.1) 60%, rgba(10, 10, 10, 0.95) 60%)",
+  }}
+  className="relative flex sm:flex-row flex-col w-full h-screen mx-auto overflow-hidden">
         <div
           className={`absolute inset-0 sm:top-[250px] top-[150px] 
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
@@ -42,12 +44,12 @@ const Hero = () => {
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Shaquille
+                Igor Dourado
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Lorem ipsum dolor sit amet. <br className="sm:block hidden" />
-              consectetur adipisicing elit deleniti, voluptas.
+              I am a developer. <br className="sm:block hidden" />
+              and much more, in and out of it.
             </p>
           </div>
           <div
@@ -83,8 +85,8 @@ const Hero = () => {
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
+            className="absolute bottom-0 ml-[40vw] 
+            lg:ml-[60vw] md:ml-[50vw] xmd:ml-[50vw] 2xl:ml-[70vw]
             sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
             src={shaq}
             alt="shaquille"

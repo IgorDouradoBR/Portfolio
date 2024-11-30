@@ -46,30 +46,46 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Frontend Developer',
-    icon: frontend,
-  },
-  {
-    title: 'Backend Developer',
+    title: 'Mobile & iOS Developer',
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
+    title: 'Backend & Frontend Developer',
+    icon: frontend,
+  },
+  {
+    title: 'Web Development & UI/UX Design',
     icon: ux,
   },
   {
-    title: 'Software Prototyping',
+    title: 'Machine Learning & Artificial Intelligence',
     icon: prototyping,
   },
 ];
 
 const technologies = [
   {
-    name: 'HTML 5',
+    name: 'Swift',
+    icon: docker,
+  },
+  {
+    name: 'Java',
+    icon: typescript,
+  },
+  {
+    name: 'Python',
+    icon: graphql,
+  },
+  {
+    name: 'C',
+    icon: rubyrails,
+  },
+  {
+    name: 'HTML',
     icon: html,
   },
   {
-    name: 'CSS 3',
+    name: 'CSS',
     icon: css,
   },
   {
@@ -77,79 +93,56 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: 'TypeScript',
-    icon: typescript,
-  },
-  {
-    name: 'React JS',
+    name: 'React',
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
+    name: 'Dart',
     icon: redux,
   },
   {
-    name: 'Tailwind CSS',
+    name: 'MySQL',
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
-  },
-  {
-    name: 'Rails',
-    icon: rubyrails,
-  },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
-  {
-    name: 'postgresql',
+    name: 'SwiftUI/UIKit',
     icon: postgresql,
   },
   {
-    name: 'git',
+    name: 'Flutter',
+    icon: nodejs,
+  },
+  {
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'figma',
+    name: 'Figma',
     icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
+    title: 'TI Intern & Research',
+    company_name: 'PUCRS',
     icon: coverhunt,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'Oct 2021 - Nov 2022',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
+    title: 'Mobile & iOS Developer',
+    company_name: 'Apple Developer Academy',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Fev 2023 - Dec 2024',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
-    iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
-  },
-  {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
+    title: 'Software Engineer, Mobile & Web Full Stack Developer',
+    company_name: 'EPJEL',
     icon: dcc,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Dec 2023 - Nov 2024',
   },
 ];
 
@@ -178,9 +171,9 @@ const projects = [
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Herbaria',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'An app to identify plants, view details, catalog them, and get care reminders.',
     tags: [
       {
         name: 'react',
@@ -197,11 +190,11 @@ const projects = [
     ],
     image: leaderboard,
     repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    demo: 'html5up-solid-state/index.html',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
+    name: 'Auway',
     description: 'This is a single-page calculator app built with React',
     tags: [
       {
@@ -217,13 +210,13 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
+    image: movie,
     repo: 'https://github.com/shaqdeff/Math-Magicians',
     demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
+    name: 'Carreira Pra TI',
     description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
     tags: [
       {
@@ -239,7 +232,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
+    image: math,
     repo: 'https://github.com/shaqdeff/Movie-Metro',
     demo: 'https://movie-metro.netlify.app/',
   },

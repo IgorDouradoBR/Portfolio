@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { SectionWrapper } from '../hoc';
 import { styles } from '../styles';
@@ -15,19 +15,25 @@ const ProjectCard = ({
   demo,
   index,
   active,
-  handleClick,
+  handleMouseEnter,
+  handleMouseLeave,
+  showText,
 }) => {
   return (
     <motion.div
-      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-      className={`relative ${
-        active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
-      } flex items-center justify-center min-w-[170px] 
-      h-[420px] cursor-pointer card-shadow`}
-      onClick={() => handleClick(id)}>
-      <div
-        className="absolute top-0 left-0 z-10 bg-jetLight 
-      h-full w-full opacity-[0.5] rounded-[24px]"></div>
+      className={`relative flex items-center justify-center min-w-[170px] 
+      h-[420px] cursor-pointer card-shadow transition-all duration-100 ease-in-out
+      ${active === id ? 'lg:flex-[3] flex-[8]' : 'lg:flex-[1] flex-[2]'}`}
+      onMouseEnter={() => handleMouseEnter(id)}
+      onMouseLeave={() => handleMouseLeave()}
+      style={{
+        transition: 'all 0.7s ease-in-out',
+      }}
+    >
+  <div
+        className={`absolute top-0 left-0 z-10 bg-jetLight 
+        h-full w-full rounded-[24px] transition-opacity duration-700 ease-in-out 
+        ${active === id ? 'opacity-0' : 'opacity-[0.5]'}`}></div>
 
       <img
         src={image}
@@ -48,14 +54,15 @@ const ProjectCard = ({
       ) : (
         <>
           <div
-            className="absolute bottom-0 p-8 justify-start w-full 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
+              className={`absolute bottom-0 p-8 justify-start w-full 
+  flex-col bg-[rgba(13,13,13,0.5)] rounded-b-[24px] z-20 h-[230px]
+  transition-opacity duration-[0.5s] ease-in-out ${showText ? 'opacity-100' : 'opacity-0'}`}>
+  
             <div className="absolute inset-0 flex justify-end m-3">
               <div
                 onClick={() => window.open(repo, '_blank')}
                 className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
-                  flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8]">
+                  flex justify-center items-center cursor-pointer">
                 <img
                   src={github}
                   alt="source code"
@@ -65,14 +72,16 @@ const ProjectCard = ({
             </div>
 
             <h2
-              className="font-bold sm:text-[32px] text-[24px] 
-              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]">
+              className={`font-bold sm:text-[32px] text-[24px] text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]
+              ${showText ? 'opacity-100' : 'opacity-0'}
+              transition-opacity duration-[0.5s] ease-in-out delay-[0.3s]`}>
               {name}
             </h2>
             <p
-              className="text-silver sm:text-[14px] text-[12px] 
-              max-w-3xl sm:leading-[24px] leading-[18px]
-              font-poppins tracking-[1px]">
+              className={`text-silver sm:text-[14px] text-[12px] 
+              max-w-3xl sm:leading-[24px] leading-[18px] font-poppins tracking-[1px] 
+              ${showText ? 'opacity-100' : 'opacity-0'}
+              transition-opacity duration-[0.5s] ease-in-out delay-[0.3s]`}>
               {description}
             </p>
             <button
@@ -82,7 +91,7 @@ const ProjectCard = ({
               whitespace-nowrap gap-1 sm:w-[138px] sm:h-[50px] 
               w-[125px] h-[46px] rounded-[10px] glassmorphism 
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
-              hover:text-eerieBlack transition duration-[0.2s] 
+              hover:text-eerieBlack transition duration-[0.5s] 
               ease-in-out"
               onClick={() => window.open(demo, '_blank')}
               onMouseOver={() => {
@@ -99,7 +108,7 @@ const ProjectCard = ({
                 src={pineapple}
                 alt="pineapple"
                 className="btn-icon sm:w-[34px] sm:h-[34px] 
-                  w-[30px] h-[30px] object-contain"
+                  w-[30px] h-[30px] object-contain transition-transform duration-100 ease-in-out"
               />
               LIVE DEMO
             </button>
@@ -111,24 +120,29 @@ const ProjectCard = ({
 };
 
 const Projects = () => {
-  const [active, setActive] = useState('project-2');
+  const [active, setActive] = useState(''); // Initially no project is active
+  const [showText, setShowText] = useState(false);
+
+  const handleMouseEnter = (id) => {
+    setActive(id);
+    setTimeout(() => setShowText(true), 300); // 1-second delay for showing text
+  };
+
+  const handleMouseLeave = () => {
+    setActive('');
+    setShowText(false); // Reset on mouse leave
+  };
 
   return (
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>Case Studies</p>
+        <p className={`${styles.sectionSubText} `}>Works and Practical</p>
         <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-          These projects demonstrate my expertise with practical examples of
-          some of my work, including brief descriptions and links to code
-          repositories and live demos. They showcase my ability to tackle
-          intricate challenges, adapt to various technologies, and efficiently
-          oversee projects.
+        <motion.p className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
+          These projects showcase my expertise through practical examples, with detailed descriptions, links to downloads, websites and demos. They highlight my ability to tackle complex challenges, adapt to various technologies, and manage projects efficiently. With a solid foundation in iOS and mobile development, full-stack development, team collaboration, AI, and machine learning, I have advanced skills in database, cloud management, and UX/UI design. My approach focuses on creating user-friendly, scalable solutions across platforms and technologies.
         </motion.p>
       </div>
 
@@ -145,7 +159,9 @@ const Projects = () => {
               index={index}
               {...project}
               active={active}
-              handleClick={setActive}
+              showText={showText}
+              handleMouseEnter={handleMouseEnter}
+              handleMouseLeave={handleMouseLeave}
             />
           ))}
         </div>
