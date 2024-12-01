@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+	<style>
+		line { stroke: #ffaaaa; stroke-width: 2px; }
+	</style>
+	<line x1="200" y1="200" x2="404" y2="404" />
+	<line x1="200" y1="404" x2="404" y2="200" />
+</svg>
