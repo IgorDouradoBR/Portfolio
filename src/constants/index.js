@@ -190,7 +190,7 @@ const projects = [
     ],
     image: leaderboard,
     repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'html5up-solid-state/index.html',
+    demo: 'herbaria/index.html',
   },
   {
     id: 'project-3',
