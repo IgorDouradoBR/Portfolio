@@ -149,8 +149,8 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Linkedin',
+    description: 'My linkedin, with my works and projects detailed, contact me',
     tags: [
       {
         name: 'react',
@@ -195,7 +195,7 @@ const projects = [
   {
     id: 'project-3',
     name: 'Auway',
-    description: 'This is a single-page calculator app built with React',
+    description: 'Auway help you and your dog to get a health and fun life together',
     tags: [
       {
         name: 'nextjs',
@@ -212,12 +212,12 @@ const projects = [
     ],
     image: movie,
     repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    demo: 'https://auway.com.br/',
   },
   {
     id: 'project-4',
     name: 'Carreira Pra TI',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    description: `The app to help you to choose a career in TI`,
     tags: [
       {
         name: 'nextjs',
@@ -234,13 +234,13 @@ const projects = [
     ],
     image: math,
     repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
+    demo: 'carreiraprati/index.html',
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'GitHub',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'My GitHub repositories and description',
     tags: [
       {
         name: 'nextjs',
