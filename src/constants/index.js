@@ -149,25 +149,25 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'Linkedin',
-    description: 'My linkedin, with my works and projects detailed, contact me',
+    name: 'Carreira Pra TI',
+    description: `The app to help you to choose a career in TI`,
     tags: [
       {
-        name: 'react',
+        name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'supabase',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'css',
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    image: math,
+    repo: 'https://github.com/IgorDouradoBR',
+    demo: 'carreiraprati/index.html',
   },
   {
     id: 'project-2',
@@ -189,7 +189,7 @@ const projects = [
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
+    repo: 'https://github.com/IgorDouradoBR',
     demo: 'herbaria/index.html',
   },
   {
@@ -211,13 +211,13 @@ const projects = [
       },
     ],
     image: movie,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
+    repo: 'https://github.com/IgorDouradoBR',
     demo: 'https://auway.com.br/',
   },
   {
     id: 'project-4',
-    name: 'Carreira Pra TI',
-    description: `The app to help you to choose a career in TI`,
+    name: 'Riddle Cards',
+    description: `App with +3000 riddles for you and your friends to have fun`,
     tags: [
       {
         name: 'nextjs',
@@ -232,15 +232,15 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'carreiraprati/index.html',
+    image: komikult,
+    repo: 'https://github.com/IgorDouradoBR',
+    demo: 'https://apps.apple.com/br/app/riddle-cards/id6569229614',
   },
   {
     id: 'project-5',
-    name: 'GitHub',
+    name: 'Ice Fall',
     description:
-      'My GitHub repositories and description',
+      'Make Pingo survive on the ice and avoid the shark as much as possible.',
     tags: [
       {
         name: 'nextjs',
@@ -256,8 +256,8 @@ const projects = [
       },
     ],
     image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    repo: 'https://github.com/IgorDouradoBR',
+    demo: 'https://apps.apple.com/br/app/ice-fall-the-cold-game/id6476595916',
   },
 ];
 
