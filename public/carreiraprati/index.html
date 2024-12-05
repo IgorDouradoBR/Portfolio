@@ -78,8 +78,8 @@
           </button>
         </div>
         <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-">
-          <img class="w-full md:w-4/5 z-50" src="icone.png" />
+        <div class="w-full md:w-3/5 py-6 flex justify-end">
+          <img class="w-4/5" src="icone.png" style="margin-right: 0;">
         </div>
       </div>
     </div>
@@ -344,7 +344,7 @@
     document.getElementById(`feedback${currentFeedback}`).style.display = 'none';
     currentFeedback = currentFeedback % totalFeedback + 1;
     document.getElementById(`feedback${currentFeedback}`).style.display = 'block';
-  }, 8000);
+  }, 7200);
 
       document.addEventListener("scroll", function () {
         /*Apply classes for slide in bar*/
