@@ -218,7 +218,7 @@ const projects = [
     id: 'project-4',
     name: 'GastroNordeste',
     description:
-     `27 Recipes from nordeste adapted for each part of the world and for each person`,
+     `27 Recipes from nordeste adapted for each part of the world and person`,
     tags: [
       {
         name: 'nextjs',
