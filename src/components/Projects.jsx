@@ -58,18 +58,7 @@ const ProjectCard = ({
   flex-col bg-[rgba(13,13,13,0.5)] rounded-b-[24px] z-20 h-[230px]
   transition-opacity duration-[0.5s] ease-in-out ${showText ? 'opacity-100' : 'opacity-0'}`}>
   
-            <div className="absolute inset-0 flex justify-end m-3">
-              <div
-                onClick={() => window.open(repo, '_blank')}
-                className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
-                  flex justify-center items-center cursor-pointer">
-                <img
-                  src={github}
-                  alt="source code"
-                  className="w-4/5 h-4/5 object-contain"
-                />
-              </div>
-            </div>
+            
 
             <h2
               className={`font-bold sm:text-[32px] text-[24px] text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]

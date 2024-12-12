@@ -40,7 +40,7 @@ const Hero = () => {
           </div>
 
           {/* Card com fundo branco e borda cinza */}
-          <div className="bg-white border border-gray-300 p-6 rounded-lg shadow-lg">
+          <div className="bg-white border-12 border-gray-400 p-6 rounded-lg shadow-lg">
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
             >

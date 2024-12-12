@@ -216,8 +216,9 @@ const projects = [
   },
   {
     id: 'project-4',
-    name: 'Riddle Cards',
-    description: `App with +3000 riddles for you and your friends to have fun`,
+    name: 'GastroNordeste',
+    description:
+     `27 Recipes from nordeste adapted for each part of the world and for each person`,
     tags: [
       {
         name: 'nextjs',
@@ -234,7 +235,7 @@ const projects = [
     ],
     image: komikult,
     repo: 'https://github.com/IgorDouradoBR',
-    demo: 'https://apps.apple.com/br/app/riddle-cards/id6569229614',
+    demo: 'https://apps.apple.com/br/app/gastronordeste/id6463458523',
   },
   {
     id: 'project-5',
