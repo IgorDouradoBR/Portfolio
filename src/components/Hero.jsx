@@ -44,18 +44,18 @@ const Hero = () => {
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
             >
-              Hi, I'm{' '}
+              Olá, Eu sou o {' '}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase"
               >
-                Igor Dourado
+              Igor Dourado
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              I am a developer. <br className="sm:block hidden" />
-              and much more, in and out of it.
+              Eu sou um Desenvolvedor. <br className="sm:block hidden" />
+              e muito mais, dentro e fora disso.
             </p>
           </div>
 
