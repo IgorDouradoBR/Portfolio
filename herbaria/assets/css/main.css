@@ -3387,6 +3387,7 @@ input, select, textarea {
 		padding-left: 7.5em; /* Mover o conteúdo mais para a esquerda */
 		max-width: 90%; /* Ajusta o tamanho do contêiner */
 		text-align: left; /* Garante o alinhamento à esquerda */
+
 	}
 
 				/* Estilo para o banner */
@@ -3459,7 +3460,7 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image:  url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3482,11 +3483,15 @@ input, select, textarea {
 
 				#banner .inner {
 					width: 100%;
+					margin-left: -130px; /* Ajuste conforme necessário */
+
 				}
 
 				#banner img {
 					max-width: 90px; /* Tamanho ajustado para telas médias */
 				}
+
+				
 
 		}
 
