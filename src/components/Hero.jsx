@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { styles } from '../styles';
-import { navLinks } from '../constants';
-import { shaq, bwmap, worldmap } from '../assets';
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { styles } from "../styles";
+import { navLinks } from "../constants";
+import { shaq, bwmap, worldmap } from "../assets";
 
 const Hero = () => {
   return (
@@ -21,15 +21,10 @@ const Hero = () => {
           className="w-full h-full sm:hidden block object-cover"
         />
       </div>
-      <section
-        style={{
-          background:
-            'linear-gradient(137deg, rgba(255, 255, 255, 0.1) 60%, rgba(10, 10, 10, 0.95) 60%)',
-        }}
-        className="relative flex sm:flex-row flex-col w-full h-screen mx-auto overflow-hidden"
-      >
+      <section className="relative flex sm:flex-row flex-col w-full h-screen mx-auto overflow-hidden">
+        {/* ADICIONADO z-10 NESTA DIV ABAIXO PARA TRAZER O CARD PARA FRENTE */}
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] 
+          className={`absolute inset-0 z-10 sm:top-[250px] top-[150px] 
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
           max-w-7xl mx-auto flex flex-row items-start
           justify-between gap-3`}
@@ -40,22 +35,22 @@ const Hero = () => {
           </div>
 
           {/* Card com fundo branco e borda cinza */}
-          <div className="bg-white border-48 border-gray-400 p-6 rounded-lg shadow-lg">
+          <div className="bg-white border-48 border-gray-400 p-6 rounded-lg shadow-2xl relative -left-4 sm:-left-8">
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}
             >
-              Olá, Eu sou o {' '}
+              Hi, I'm{"  "}
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase"
               >
-              Igor Dourado
+                Igor Dourado
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Eu sou um Desenvolvedor. <br className="sm:block hidden" />
-              e muito mais, dentro e fora disso.
+              I am a Developer. <br className="sm:block hidden" />
+              And much more..
             </p>
           </div>
 
@@ -66,7 +61,7 @@ const Hero = () => {
         </div>
 
         <div
-          className="absolute xs:bottom-10 bottom-32 w-full 
+          className="absolute xs:bottom-10 bottom-32 w-full z-10
           flex justify-center items-center"
         >
           <a href="#about">
@@ -82,7 +77,7 @@ const Hero = () => {
                 transition={{
                   duration: 1.5,
                   repeat: Infinity,
-                  repeatType: 'loop',
+                  repeatType: "loop",
                 }}
                 className="w-3 h-3 rounded-full bg-taupe mb-1"
               />
@@ -90,11 +85,12 @@ const Hero = () => {
           </a>
         </div>
 
-        <div>
+        {/* DIV DA IMAGEM AGORA FICA ABAIXO DO CARD */}
+        <div className="z-0">
           <img
-            className="absolute bottom-0 ml-[40vw] 
-            lg:ml-[60vw] md:ml-[50vw] xmd:ml-[50vw] 2xl:ml-[70vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            className="absolute bottom-0 right-0 
+    h-[75vh] sm:h-[80vh] md:h-[80vh] xl:h-[85vh] 
+    w-auto max-w-none origin-bottom-right"
             src={shaq}
             alt="shaquille"
           />

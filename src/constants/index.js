@@ -22,243 +22,265 @@ import {
   math,
   movie,
   nyeusi,
-  space,
   coverhunt,
   dcc,
+  aprix,
+  claro,
   kelhel,
-  microverse,
-} from '../assets';
+  abc,
+} from "../assets";
 
 export const navLinks = [
   {
-    id: 'about',
-    title: 'About',
+    id: "about",
+    title: "About",
   },
   {
-    id: 'projects',
-    title: 'Projects',
+    id: "projects",
+    title: "Projects",
   },
   {
-    id: 'contact',
-    title: 'Contact',
+    id: "contact",
+    title: "Contact",
   },
 ];
 
 const services = [
   {
-    title: 'Mobile & iOS Developer',
+    title: "Mobile \n Software Engineer",
     icon: backend,
   },
   {
-    title: 'Backend & Frontend Developer',
+    title: "Native & Cross-Platform Developer",
     icon: frontend,
   },
   {
-    title: 'Web Development & UI/UX Design',
+    title: " Mobile \n Architecture Patterns",
     icon: ux,
   },
   {
-    title: 'Machine Learning & Artificial Intelligence',
+    title: "CI/CD & App \n Deployment",
     icon: prototyping,
   },
 ];
 
 const technologies = [
   {
-    name: 'Swift',
-    icon: docker,
-  },
-  {
-    name: 'Java',
-    icon: typescript,
-  },
-  {
-    name: 'Python',
-    icon: graphql,
-  },
-  {
-    name: 'C',
-    icon: rubyrails,
-  },
-  {
-    name: 'HTML',
-    icon: html,
-  },
-  {
-    name: 'CSS',
+    name: "iOS",
     icon: css,
   },
   {
-    name: 'JavaScript',
-    icon: javascript,
+    name: "Android",
+    icon: html,
   },
   {
-    name: 'React',
+    name: "Swift",
+    icon: docker,
+  },
+  {
+    name: "React Native",
     icon: reactjs,
   },
   {
-    name: 'Dart',
-    icon: redux,
+    name: "Kotlin",
+    icon: rubyrails,
   },
   {
-    name: 'MySQL',
-    icon: tailwind,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
-    name: 'SwiftUI/UIKit',
+    name: "Java",
+    icon: typescript,
+  },
+  {
+    name: "SwiftUI/UIKit",
     icon: postgresql,
   },
   {
-    name: 'Flutter',
+    name: "Flutter",
     icon: nodejs,
   },
   {
-    name: 'Git',
+    name: "Dart",
+    icon: redux,
+  },
+  {
+    name: "Python",
+    icon: graphql,
+  },
+  {
+    name: "MySQL",
+    icon: tailwind,
+  },
+  {
+    name: "Git",
     icon: git,
   },
   {
-    name: 'Figma',
+    name: "Figma",
     icon: figma,
   },
 ];
 
 const experiences = [
   {
-    title: 'TI Intern & Research',
-    company_name: 'PUCRS',
-    icon: coverhunt,
-    iconBg: '#333333',
-    date: 'Oct 2021 - Nov 2022',
+    title: "Mobile Software Engineer II",
+    company_name: "ABC Bank via CWI Software",
+    icon: abc,
+    iconBg: "#FFFFFF",
+    date: "Apr 2025 - PRESENT",
   },
   {
-    title: 'Mobile & iOS Developer',
-    company_name: 'Apple Developer Academy',
-    icon: microverse,
-    iconBg: '#333333',
-    date: 'Fev 2023 - Dec 2024',
+    title: "Awarded Mobile Engineer II & Technical Mentor",
+    company_name: "Claro",
+    icon: claro,
+    iconBg: "#FFFFFF",
+    date: "Jan 2025 - May 2026",
   },
   {
-    title: 'Software Engineer, Mobile & Web Full Stack Developer',
-    company_name: 'EPJEL',
+    title: "Mobile Software Engineer II",
+    company_name: "EuroChem and Vibra Energy via Aprix",
+    icon: aprix,
+    iconBg: "#FFFFFF",
+    date: "Nov 2024 - Apr 2025",
+  },
+  {
+    title: "Mobile Software Engineer I",
+    company_name: "Apple Developer",
+    icon: kelhel,
+    iconBg: "#FFFFFF",
+    date: "Nov 2022 - Nov 2024",
+  },
+  {
+    title: "Mobile Software Engineer I",
+    company_name: "EPJEL",
     icon: dcc,
-    iconBg: '#333333',
-    date: 'Dec 2023 - Nov 2024',
+    iconBg: "#FFFFFF",
+    date: "Nov 2021 - Aug 2022",
+  },
+  {
+    title: "Software Engineer Intern",
+    company_name: "PUCRS",
+    icon: coverhunt,
+    iconBg: "#FFFFFF",
+    date: "Oct 2020 - Sep 2021",
   },
 ];
 
 const projects = [
   {
-    id: 'project-1',
-    name: 'Carreira Pra TI',
-    description: `The app to help you to choose a career in TI`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
-    repo: 'https://github.com/IgorDouradoBR',
-    demo: 'carreiraprati/index.html',
-  },
-  {
-    id: 'project-2',
-    name: 'Herbaria',
+    id: "project-1",
+    name: "SAF Herbaria",
     description:
-      'An app to identify plants, view details, catalog them, and get care reminders.',
+      "Award-winning AgTech pitched in Silicon Valley for data-driven farming.",
     tags: [
       {
-        name: 'react',
-        color: 'blue-text-gradient',
+        name: "react",
+        color: "blue-text-gradient",
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
+        name: "restapi",
+        color: "green-text-gradient",
       },
       {
-        name: 'scss',
-        color: 'pink-text-gradient',
+        name: "scss",
+        color: "pink-text-gradient",
       },
     ],
     image: leaderboard,
-    repo: 'https://github.com/IgorDouradoBR',
-    demo: 'herbaria/index.html',
+    repo: "https://github.com/IgorDouradoBR",
+    demo: "herbaria/index.html",
   },
   {
-    id: 'project-3',
-    name: 'Auway',
-    description: 'Auway help you and your dog to get a health and fun life together',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/IgorDouradoBR',
-    demo: 'https://auway.com.br/',
-  },
-  {
-    id: 'project-4',
-    name: 'GastroNordeste',
+    id: "project-2",
+    name: "Vibra Energy",
     description:
-     `27 Recipes from nordeste adapted for each part of the world and person`,
+      "B2B & B2C app for Brazil's largest fuel distributor handling real-time pricing.",
     tags: [
       {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
+        name: "nextjs",
+        color: "blue-text-gradient",
       },
       {
-        name: 'supabase',
-        color: 'green-text-gradient',
+        name: "supabase",
+        color: "green-text-gradient",
       },
       {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: komikult,
-    repo: 'https://github.com/IgorDouradoBR',
-    demo: 'https://apps.apple.com/br/app/gastronordeste/id6463458523',
-  },
-  {
-    id: 'project-5',
-    name: 'Ice Fall',
-    description:
-      'Make Pingo survive on the ice and avoid the shark as much as possible.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
+        name: "css",
+        color: "pink-text-gradient",
       },
     ],
     image: nyeusi,
-    repo: 'https://github.com/IgorDouradoBR',
-    demo: 'https://apps.apple.com/br/app/ice-fall-the-cold-game/id6476595916',
+    repo: "https://github.com/IgorDouradoBR",
+    demo: "https://apps.apple.com/br/app/ice-fall-the-cold-game/id6476595916",
+  },
+  {
+    id: "project-3",
+    name: "ABC Bank",
+    description: `International Arab bank app for secure investments and transactions.`,
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: math,
+    repo: "https://github.com/IgorDouradoBR",
+    demo: "carreiraprati/index.html",
+  },
+  {
+    id: "project-4",
+    name: "EuroChem",
+    description: `Global agrochemical platform for dynamic pricing and product catalogs`,
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: komikult,
+    repo: "https://github.com/IgorDouradoBR",
+    demo: "https://apps.apple.com/br/app/gastronordeste/id6463458523",
+  },
+  {
+    id: "project-5",
+    name: "Auway",
+    description:
+      "Auway help you and your dog to get a health and fun life walking together",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: movie,
+    repo: "https://github.com/IgorDouradoBR",
+    demo: "https://auway.com.br/",
   },
 ];
 
